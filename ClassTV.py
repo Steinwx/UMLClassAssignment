@@ -1,3 +1,7 @@
+# Paul Adrian S. Montas
+# BSCOE 1-4
+
+
 class TV:
     
     def __init__(self) -> None:
@@ -15,7 +19,7 @@ class TV:
         return self.channel
     
     def setChannel(self,int):
-        if int<=120 and int>=1:
+        if int<= 120 and int>= 1:
             self.channel=int
 
     def getVolume(self):
@@ -26,25 +30,25 @@ class TV:
             self.volumeLevel=int2
 
     def channelUp(self):
-        if self.channel<120:
-            self.channel+=1
+        if self.channel < 120:
+            self.channel += 1
         else:
-            self.channel=1
+            self.channel= 1
 
     def channelDown(self):
-        if self.channel>1:
-            self.channel-=1
+        if self.channel> 1:
+            self.channel-= 1
         else:
-            self.channel=120
+            self.channel= 120
 
     def volumelUp(self):
-        if self.channel<7:
-            self.channel+=1
+        if self.channel < 7:
+            self.channel += 1
         else:
-            self.channel=1
+            self.channel = 1
 
     def volumeDown(self):
-        if self.channel>1:
-            self.channel-=1
+        if self.channel > 1:
+            self.channel -= 1
         else:
-            self.channel=7
+            self.channel = 7
