@@ -1,3 +1,5 @@
+# Paul Adrian S. Montas
+# BSCOE 1-4
 #Class Objects
 class TV:
     
@@ -49,3 +51,21 @@ class TV:
             self.channel -= 1
         else:
             self.channel = 7
+class TestTV:
+    def __init__(self):
+        self.tv1 = TV()
+        self.tv2 = TV()
+        self.tv1.setChannel(30)
+        self.tv1.setVolume(3)
+        self.tv2.setChannel(3)
+        self.tv2.setVolume(2)
+        
+
+    def display_tv_info(self):
+        print("tv1's channel is", self.tv1.getChannel(), "and volume level is", self.tv1.getVolume())
+        print("tv2's channel is", self.tv2.getChannel(), "and volume level is", self.tv2.getVolume())
+
+
+#TestTV that will create two objects from Class TV and will produce the following output:
+test_tv = TestTV()
+test_tv.display_tv_info()

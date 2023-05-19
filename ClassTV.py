@@ -1,7 +1,7 @@
 # Paul Adrian S. Montas
 # BSCOE 1-4
 
-
+#Class Objects
 class TV:
     
     def __init__(self) -> None:
