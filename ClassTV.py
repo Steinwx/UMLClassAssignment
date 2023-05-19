@@ -15,8 +15,15 @@ class TV:
         return self.channel
     
     def setChannel(self,int):
-        if int>=120 and int<=1:
+        if int<=120 and int>=1:
             self.channel=int
+
+    def getVolume(self):
+        return self.volumeLevel
+
+    def setVolume(self,int2):
+        if int2<=7 and int2>=1:
+            self.volumeLevel=int2
 
     def channelUp(self):
         if self.channel<120:
